@@ -1,8 +1,8 @@
 # Quantum Computing Experiments
 
-Small rust sandbox for quick quantum-computing experiments
+Small sandbox for learning quantum computing.
 
-## Running Examples
+## Rust Examples
 
 `kets-bra` builds the Pauli-X gate from ket/bra outer products and applies it to a state vector.
 
@@ -15,4 +15,26 @@ cargo run --example kets-bra
 ```bash
 cargo run --example bloch-sphere
 cargo run --example bloch-sphere -- 60 45
+```
+
+## Qiskit notebooks
+
+This repo also includes a Python notebook and scripts for Qiskit workflows against IBM Quantum backends.
+
+Use the Miniconda environments
+
+```bash
+conda activate <name>
+```
+
+If needed, install dependencies:
+
+```bash
+pip install qiskit qiskit-ibm-runtime matplotlib
+```
+
+Set your IBM token before running notebook cells that connect to IBM Quantum:
+
+```bash
+export IBM_TOKEN=your_token_here
 ```
